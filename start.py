@@ -1,4 +1,7 @@
 import random
+import time
 
-words = [line.strip() for line in open('/src/wordlist.txt')]
-print(random.choice(words))
+while True:
+    words = [line.strip() for line in open('wordlist.txt')]
+    print(random.choice(words))
+    time.sleep(5)
